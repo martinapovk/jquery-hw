@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hide/Show Elements</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("button.hide").click(function () {
+          $("*[align='center']").hide();
+        });
+        $("button.show").click(function () {
+          $("*[align='center']").show();
+        });
+      });
+    </script>
+    <style>
+      .btn-next {
+        text-decoration: none;
+        color: black;
+        border: 2px solid black;
+        border-radius: 40%;
+        padding: 10px;
+        margin: 10px;
+        display: inline-block;
+      }
+      .btn-next:hover {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="hide">Hide Elements</button>
+    <button class="show">Show Elements</button>
+    <table>
+      <tr>
+        <td align="left">Left</td>
+        <td align="center">Center</td>
+        <td align="right">Right</td>
+      </tr>
+      <tr>
+        <td align="left">Left</td>
+        <td align="center">Center</td>
+        <td align="right">Right</td>
+      </tr>
+      <tr>
+        <td align="left">Left</td>
+        <td align="center">Center</td>
+        <td align="right">Right</td>
+      </tr>
+    </table>
+    <a class="btn-next" href="/Experiments1_3.html">ДЗ 1_3</a>
+    <a class="btn-next" href="/Experiments2_1.html">ДЗ 2_1</a>
+  </body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Приховати/показати парні елементи типу &lt;tr&gt;</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        // метод click() для кнопки "Приховати елементи"
+        $("#hideBtn").click(function () {
+          $("tr:odd").hide();
+        });
+
+        // метод click() для кнопки "Показати сховані елементи"
+        $("#showBtn").click(function () {
+          $("tr:hidden:odd").show();
+        });
+      });
+    </script>
+    <style>
+      .btn-next {
+        text-decoration: none;
+        color: black;
+        border: 2px solid black;
+        border-radius: 40%;
+        padding: 10px;
+        margin: 10px;
+        display: inline-block;
+      }
+      .btn-next:hover {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- HTML-код з двома кнопками -->
+    <button id="hideBtn">Приховати парні елементи</button>
+    <button id="showBtn">Показати парні сховані елементи</button>
+
+    <!-- HTML-код з таблицею, яку ми будемо приховувати/відображати -->
+    <table>
+      <tr>
+        <td>Рядок 1</td>
+      </tr>
+      <tr>
+        <td>Рядок 2</td>
+      </tr>
+      <tr>
+        <td>Рядок 3</td>
+      </tr>
+      <tr>
+        <td>Рядок 4</td>
+      </tr>
+      <tr>
+        <td>Рядок 5</td>
+      </tr>
+    </table>
+    <a class="btn-next" href="/Experiments1_1.html">До першого</a>
+    <a class="btn-next" href="/Experiments1_3.html">До третього</a>
+  </body>
+</html>

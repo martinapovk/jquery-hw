@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Приховати/показати непарні елементи з класом "Msonormal"</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        // метод click() для кнопки "Приховати елементи"
+        $("#hideBtn").click(function () {
+          $(".Msonormal:even").hide();
+        });
+
+        // метод click() для кнопки "Показати сховані елементи"
+        $("#showBtn").click(function () {
+          $(".Msonormal:hidden:even").show();
+        });
+      });
+    </script>
+    <style>
+      .btn-next {
+        text-decoration: none;
+        color: black;
+        border: 2px solid black;
+        border-radius: 40%;
+        padding: 10px;
+        margin: 10px;
+        display: inline-block;
+      }
+      .btn-next:hover {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- HTML-код з двома кнопками -->
+    <button id="hideBtn">Приховати непарні елементи</button>
+    <button id="showBtn">Показати непарні сховані елементи</button>
+
+    <!-- HTML-код з елементами, які ми будемо приховувати/відображати -->
+    <div class="Msonormal">Елемент 1</div>
+    <div class="Msonormal">Елемент 2</div>
+    <div class="Msonormal">Елемент 3</div>
+    <div class="Msonormal">Елемент 4</div>
+    <div class="Msonormal">Елемент 5</div>
+    <a class="btn-next" href="/Experiments1_2.html">До другого</a>
+  </body>
+</html>
