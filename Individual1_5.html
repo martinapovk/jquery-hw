@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Individual_5</title>
+    <style>
+      img {
+        display: none;
+        position: absolute;
+        top: 100px;
+        left: 0;
+      }
+      .img1 {
+        left: 50px;
+      }
+      .img2 {
+        left: 600px;
+      }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        var img1 = $("img:first");
+        var img2 = $("img:last");
+        var interval;
+        $("button:first").click(function () {
+          clearInterval(interval);
+          interval = setInterval(function () {
+            img1.fadeToggle(2000);
+            img2.fadeToggle(2000);
+          }, 2000);
+        });
+
+        $("button:last").click(function () {
+          clearInterval(interval);
+          img1.fadeIn();
+          img2.fadeIn();
+        });
+      });
+    </script>
+    <style>
+      .btn-next {
+        text-decoration: none;
+        color: black;
+        border: 2px solid black;
+        border-radius: 40%;
+        padding: 10px;
+        margin: 10px;
+        display: inline-block;
+      }
+      .btn-next:hover {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <img
+      class="img1"
+      src="https://via.placeholder.com/300x150.png?text=Image+1"
+      alt="Image 1"
+    />
+    <img
+      class="img2"
+      src="https://via.placeholder.com/300x150.png?text=Image+2"
+      alt="Image 2"
+    />
+    <br />
+    <button>Toggle Images</button>
+    <button>Show Images</button>
+
+    <a class="btn-next" href="/Experiments2_4.html">ДЗ 2_4</a>
+    <a class="btn-next" href="/Individual1_6.html">ДЗ 2_6</a>
+  </body>
+</html>

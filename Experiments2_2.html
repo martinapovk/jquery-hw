@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Experiments2</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $('[align="center"]').dblclick(function () {
+          $(this).toggle();
+        });
+      });
+    </script>
+    <style>
+      .btn-next {
+        text-decoration: none;
+        color: black;
+        border: 2px solid black;
+        border-radius: 40%;
+        padding: 10px;
+        margin: 10px;
+        display: inline-block;
+      }
+      .btn-next:hover {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <td align="center">Це елемент 1</td>
+        <td>Це елемент 2</td>
+      </tr>
+      <tr>
+        <td>Це елемент 3</td>
+        <td align="center">Це елемент 4</td>
+      </tr>
+    </table>
+    <a class="btn-next" href="/Experiments2_1.html">ДЗ 2_1</a>
+    <a class="btn-next" href="/Experiments2_3.html">ДЗ 2_3</a>
+  </body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Experiment 1</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("img").hover(
+          function () {
+            $(this).hide();
+          },
+          function () {
+            $(this).show();
+          }
+        );
+      });
+    </script>
+    <style>
+      .btn-next {
+        text-decoration: none;
+        color: black;
+        border: 2px solid black;
+        border-radius: 40%;
+        padding: 10px;
+        margin: 10px;
+        display: inline-block;
+      }
+      .btn-next:hover {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Experiment 1: Hide/Show Image on Mouse Hover</h1>
+    <table>
+      <tr>
+        <td>
+          <img src="https://picsum.photos/200/300" alt="Random Image" />
+        </td>
+        <td>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nec
+            quam euismod, faucibus ante at, ultrices tortor. Aenean vel congue
+            libero. Vivamus fermentum augue ac metus commodo consectetur. Donec
+            a leo ut nisl tristique tempor.
+          </p>
+        </td>
+      </tr>
+      <!-- <tr>
+        <td>
+          <img src="https://picsum.photos/200/300" alt="Random Image" />
+        </td>
+        <td>
+          <p>
+            Maecenas in eleifend tellus. Duis dapibus elit a elit commodo, sed
+            gravida tellus rutrum. Nullam pharetra mauris mauris, at aliquet
+            nisi eleifend a. Curabitur et augue vitae elit maximus molestie ac
+            ac elit.
+          </p>
+        </td>
+      </tr> -->
+    </table>
+    <a class="btn-next" href="/Experiments1_4.html">ДЗ 1_4</a>
+    <a class="btn-next" href="/Experiments2_2.html">ДЗ 2_2</a>
+  </body>
+</html>

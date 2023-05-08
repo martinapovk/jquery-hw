@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Experiments3</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(window).resize(function () {
+          $("a").hide();
+        });
+      });
+    </script>
+    <style>
+      .btn-next {
+        text-decoration: none;
+        color: black;
+        border: 2px solid black;
+        border-radius: 40%;
+        padding: 10px;
+        margin: 10px;
+        display: inline-block;
+      }
+      .btn-next:hover {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Experiments3</h1>
+    <p>Resize the window to hide all elements with links.</p>
+    <a href="https://www.google.com">Google</a>
+    <a href="https://www.facebook.com">Facebook</a>
+    <a href="https://www.twitter.com">Twitter</a>
+    <a href="https://www.instagram.com">Instagram</a>
+    <a href="https://www.linkedin.com">LinkedIn</a>
+    <a class="btn-next" href="/Experiments2_2.html">ДЗ 2_2</a>
+    <a class="btn-next" href="/Experiments2_4.html">ДЗ 2_4</a>
+  </body>
+</html>
