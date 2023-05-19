@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Individual 7</title>
+    <style type="text/css">
+      p {
+        display: none;
+      }
+    </style>
+    <style>
+      .btn-next {
+        text-decoration: none;
+        color: black;
+        border: 2px solid black;
+        border-radius: 40%;
+        padding: 10px;
+        margin: 10px;
+        display: inline-block;
+      }
+      .btn-next:hover {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <button onclick="toggleParagraphs()">Toggle Paragraphs</button>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <p>Nullam porta orci at libero ullamcorper, vel fringilla nisl pulvinar.</p>
+    <p>Cras sed nulla non quam faucibus aliquet.</p>
+    <p>
+      Aliquam erat volutpat. Fusce dictum, est nec placerat rutrum, nunc dolor
+      congue odio, eget blandit lorem nibh eu justo.
+    </p>
+    <p>Vivamus interdum est vitae enim lobortis, non sodales quam viverra.</p>
+    <p>Praesent gravida arcu vel ipsum dictum bibendum.</p>
+    <p>Suspendisse potenti. In hac habitasse platea dictumst.</p>
+    <p>
+      Phasellus tristique est ut tortor volutpat, in euismod tellus fermentum.
+    </p>
+    <p>Curabitur eu dolor a leo ullamcorper consectetur vel vel ante.</p>
+    <p>Sed in diam ac enim dignissim varius.</p>
+    <script type="text/javascript">
+      function toggleParagraphs() {
+        var paragraphs = document.getElementsByTagName("p");
+        for (var i = 0; i < paragraphs.length; i++) {
+          if (i % 2 == 0) {
+            paragraphs[i].style.display = "block";
+          } else {
+            paragraphs[i].style.display = "none";
+          }
+        }
+      }
+    </script>
+    <a class="btn-next" href="/Individual1_6.html">ДЗ 2_6</a>
+    <a class="btn-next" href="/Individual1_8.html">ДЗ 2_8</a>
+  </body>
+</html>
